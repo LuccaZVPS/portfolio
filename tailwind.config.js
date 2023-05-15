@@ -22,7 +22,7 @@ export default {
         background: "#f1f3f5",
         primary: "#1c7ed6",
         paragraph: "#495057",
-        heading: "#212529",
+        heading: "#343a40",
 
         //dark
         dbackground: "#212529",
