@@ -5,7 +5,7 @@ interface props {
 }
 export const Paragraph = ({ children }: props) => {
   return (
-    <p className="dark:text-dparagraph text-paragraph text-center text-xs md:text-sm xl2:text-base">
+    <p className="dark:text-dparagraph text-paragraph text-xs md:text-sm xl2:text-base">
       {children}
     </p>
   );
