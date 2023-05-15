@@ -14,11 +14,21 @@ export default {
       main: ["Montserrat", "sans-serif"],
     },
     extend: {
+      boxShadow: {
+        light: "0 0 5px #1c7ed6",
+        dark: "0 0 5px #f03e3e",
+      },
       colors: {
         background: "#f1f3f5",
         primary: "#1c7ed6",
         paragraph: "#495057",
         heading: "#212529",
+
+        //dark
+        dbackground: "#212529",
+        dprimary: "#f03e3e",
+        dparagraph: "#e9ecef",
+        dheading: "#f8f9fa",
       },
     },
   },
