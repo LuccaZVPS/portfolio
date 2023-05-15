@@ -1,4 +1,4 @@
-import { MainContent } from "../molecules/mainContent";
+import { MainContent } from "./mainContent";
 
 export const CentralContent = () => {
   return (
