@@ -9,7 +9,7 @@ export const Landing = () => {
     createParticles();
   }, []);
   return (
-    <section className="h-screen flex relative">
+    <section className="h-screen flex relative overflow-hidden">
       <Header>
         <ThemeToogle />
       </Header>
