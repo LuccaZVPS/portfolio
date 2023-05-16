@@ -6,10 +6,10 @@ export const About = () => {
   return (
     <section className="w-screen">
       <Container>
-        <div className="flex flex-col gap-8 lg:flex-row lg:justify-center lg:items-center lg:gap-20 xl:gap-28 xl2:gap-40">
-          <div className="flex justify-center lg:w-[calc(40%)] lg:justify-end">
+        <div className="flex flex-col gap-8 lg:flex-row lg:justify-center lg:items-center ">
+          <div className="flex justify-center lg:w-[calc(50%)] lg:justify-end">
             <img
-              className="self-center rounded-full w-56 h-auto lg:w-64 xl2:w-72"
+              className="self-center rounded-full w-56 h-auto lg:w-64 lg:mr-28 xl2:w-72"
               src="https://portfolio-api-self.vercel.app/eu.jpeg"
               alt=""
             />
