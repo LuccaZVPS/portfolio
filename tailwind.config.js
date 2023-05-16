@@ -6,7 +6,7 @@ export default {
       sm: "500px",
       md: "768px",
       lg: "900px",
-      xl: "1250px",
+      xl: "1150px",
       xl2: "1600px",
       xl3: "1920px",
     },
@@ -14,21 +14,31 @@ export default {
       main: ["Montserrat", "sans-serif"],
     },
     extend: {
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, 260px)",
+        fluid2: "repeat(auto-fit, 280px)",
+        fluid3: "repeat(auto-fit, 320px)",
+      },
+
       boxShadow: {
         light: "0 0 5px #1c7ed6",
         dark: "0 0 5px #f03e3e",
       },
       colors: {
-        background: "#f1f3f5",
+        background: "#f8f9fa",
         primary: "#1c7ed6",
         paragraph: "#495057",
         heading: "#343a40",
+        card: "#e9ecef",
+        border: "#ced4da",
 
         //dark
-        dbackground: "#212529",
+        dbackground: "#181a1c",
         dprimary: "#f03e3e",
-        dparagraph: "#e9ecef",
+        dparagraph: "#adb5bd",
         dheading: "#f8f9fa",
+        dcard: "#212529",
+        dborder: "#4A4A4A",
       },
     },
   },

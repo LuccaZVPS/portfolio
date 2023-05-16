@@ -5,6 +5,8 @@ interface props {
 }
 export const Container = ({ children }: props) => {
   return (
-    <div className="px-6 py-6 sm:px-14 xl:px-20 xl2:px-32 ">{children}</div>
+    <div className="px-6 py-6 sm:px-14 xl:px-20 xl2:px-40 xl3:px-60">
+      {children}
+    </div>
   );
 };
