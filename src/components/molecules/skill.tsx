@@ -1,7 +1,6 @@
 import { Terminal } from "../atoms/terminal";
 import { SecundaryHeading } from "../atoms/secundaryHeading";
 import { Description } from "../atoms/description";
-import { DiCode } from "react-icons/di";
 
 interface props {
   img: string;
