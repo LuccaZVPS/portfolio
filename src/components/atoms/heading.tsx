@@ -1,7 +1,5 @@
-import { ReactNode } from "react";
-
 interface props {
-  children: ReactNode;
+  children: string;
 }
 export const Heading = ({ children }: props) => {
   return (
