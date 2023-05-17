@@ -22,19 +22,19 @@ export default {
 
       boxShadow: {
         light: "0 0 5px #1c7ed6",
-        dark: "0 0 5px #f03e3e",
+        dark: "0 0 5px #1c7ed6",
       },
       colors: {
         background: "#f8f9fa",
         primary: "#1c7ed6",
-        paragraph: "#495057",
+        paragraph: "#343a40",
         heading: "#343a40",
         card: "#e9ecef",
         border: "#ced4da",
 
         //dark
         dbackground: "#181a1c",
-        dprimary: "#f03e3e",
+        dprimary: "#1c7ed6",
         dparagraph: "#adb5bd",
         dheading: "#f8f9fa",
         dcard: "#212529",
