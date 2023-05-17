@@ -1,6 +1,7 @@
 import { About } from "../organisms/about";
 import { Landing } from "../organisms/landing";
 import { Projects } from "../organisms/projects";
+import { Skills } from "../organisms/skills";
 
 export const HomeTemplate = () => {
   return (
@@ -8,6 +9,7 @@ export const HomeTemplate = () => {
       <Landing />
       <About />
       <Projects />
+      <Skills />
     </main>
   );
 };
