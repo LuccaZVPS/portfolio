@@ -1,8 +1,11 @@
-export const ProjectIcon = () => {
+import { Icon } from "../../types/project";
+
+export const ProjectIcon = ({ title, path }: Icon) => {
   return (
     <img
-      className="w-[calc(19px)] rounded-md xl:w-[calc(22px)] xl2:w-[calc(25px)]"
-      src="https://portfolio-api-self.vercel.app/ts.svg"
+      className="w-[calc(25px)] rounded-md "
+      src={`${import.meta.env.VITE_API_DOMAIN}/${path}`}
+      title={title.charAt(0).toUpperCase() + title.slice(1)}
     ></img>
   );
 };

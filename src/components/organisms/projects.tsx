@@ -1,8 +1,10 @@
+import { useData } from "../../contexts/data";
 import { Container } from "../atoms/container";
 import { EmojiText } from "../atoms/emojiText";
 import { Heading } from "../atoms/heading";
 import { Project } from "../molecules/project";
 export const Projects = () => {
+  const { projects } = useData().data;
   return (
     <section className="w-[100%] overflow-x-hidden">
       <Container>
@@ -13,16 +15,16 @@ export const Projects = () => {
           </div>
           <div className="w-full overflow-x-auto mt-10">
             <div className="flex w-fit gap-8 md:w-full md:grid-cols-fluid md:grid sm:gap-10 xl2:grid-cols-fluid2 xl3:grid-cols-fluid3 justify-evenly">
-              <Project />
-              <Project />
-              <Project />
-              <Project />
-              <Project />
-              <Project />
-              <Project />
-              <Project />
-              <Project />
-              <Project />
+              {projects.map((p, n: number) => (
+                <Project
+                  key={n}
+                  title={p.title}
+                  description={p.description}
+                  icons={p.icons}
+                  img={p.img}
+                  link={p.link}
+                />
+              ))}
             </div>
           </div>
         </div>

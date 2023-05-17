@@ -1,28 +1,28 @@
+import { IProject } from "../../types/project";
 import { Description } from "../atoms/description";
 import { ProjectIcon } from "../atoms/projectIcon";
 import { SecundaryHeading } from "../atoms/secundaryHeading";
 import { Terminal } from "../atoms/terminal";
 
-export const Project = () => {
+export const Project = ({ title, description, icons, img, link }: IProject) => {
+  const handleClick = () => {
+    window.open(link, "_blank");
+  };
   return (
-    <Terminal>
+    <Terminal onClick={handleClick} clickable={true}>
       <div className="">
-        <SecundaryHeading>Dashboard de clientes</SecundaryHeading>
+        <SecundaryHeading>{title}</SecundaryHeading>
         <div className=" mt-1 h-20 ">
-          <Description>
-            Projeto freelance onde desenvolvi uma aplicação com TDD e
-            arquitetura limpa para gerenciamento de clientes e arquitetos.
-          </Description>
+          <Description>{description}</Description>
         </div>
         <div className="flex gap-2 mb-4 mt-5 bg ">
-          <ProjectIcon />
-          <ProjectIcon />
-          <ProjectIcon />
-          <ProjectIcon />
+          {icons.map((i, n: number) => (
+            <ProjectIcon key={n} title={i.title} path={i.path} />
+          ))}
         </div>
         <img
           className="rounded-lg w-full h-auto"
-          src="https://portfolio-api-self.vercel.app/pomobile.png"
+          src={`${import.meta.env.VITE_API_DOMAIN}/${img}`}
           alt=""
         />
       </div>
