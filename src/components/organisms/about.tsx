@@ -4,9 +4,9 @@ import { Summary } from "../molecules/summary";
 import { EmojiText } from "../atoms/emojiText";
 export const About = () => {
   return (
-    <section className="w-screen">
+    <section className="w-full">
       <Container>
-        <div className="flex flex-col gap-8 lg:flex-row lg:justify-center lg:items-center ">
+        <div className="flex flex-col gap-8 lg:flex-row lg:justify-center lg:items-center w-full">
           <div className="flex justify-center lg:w-[calc(50%)] lg:justify-end">
             <img
               className="self-center rounded-full w-56 h-auto lg:w-64 lg:mr-28 xl2:w-72"

@@ -4,9 +4,9 @@ import { Heading } from "../atoms/heading";
 import { Project } from "../molecules/project";
 export const Projects = () => {
   return (
-    <section className="w-screen overflow-x-hidden">
+    <section className="w-[100%] overflow-x-hidden">
       <Container>
-        <div className="flex flex-col">
+        <div className="flex flex-col w-[100%] ">
           <div className="flex flex-col gap-6">
             <EmojiText>🔗 Portfólio</EmojiText>
             <Heading>Projetos</Heading>

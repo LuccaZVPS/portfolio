@@ -9,15 +9,12 @@ export const Landing = () => {
     createParticles();
   }, []);
   return (
-    <section className="h-screen flex relative overflow-hidden">
+    <section className="h-screen flex overflow-hidden">
       <Header>
         <ThemeToogle />
       </Header>
       <CentralContent />
-      <canvas
-        className="absolute bg-transparent w-screen h-screen"
-        id="canvas"
-      />
+      <canvas className="absolute bg-transparent w-full h-screen" id="canvas" />
     </section>
   );
 };
