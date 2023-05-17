@@ -15,6 +15,7 @@ export const DataContext = ({ children }: props) => {
   const fechData = async () => {
     const response = await api.get(import.meta.env.VITE_API_URL, null);
     setLoading(false);
+    console.log(response);
     if (response.statusCode !== 200) {
       return setError(true);
     }

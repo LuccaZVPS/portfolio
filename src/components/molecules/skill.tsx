@@ -10,10 +10,10 @@ interface props {
 export const Skill = ({ title, description, img }: props) => {
   return (
     <Terminal>
-      <div className="flex justify-center flex-col items-center w-[260px] xl:w-[300px] xl2:w-[320px]">
+      <div className="flex justify-center flex-col items-center w-[260px] xl:w-[300px] xl2:w-[340px]">
         <div className="bg-primary w-14 h-14 rounded-full flex justify-center items-center text-white mb-5 dark:bg-dprimary">
           <img
-            className="w-[18px]"
+            className="w-[25px]"
             src={`${import.meta.env.VITE_API_DOMAIN}/${img}`}
             alt=""
           />

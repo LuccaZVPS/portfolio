@@ -1,4 +1,5 @@
 import { useData } from "./contexts/data";
+import { Error } from "./pages/error";
 import { Home } from "./pages/home";
 import { Loading } from "./pages/loading";
 
@@ -9,6 +10,7 @@ export const Index = () => {
       <div className="w-full max-w-[2500px] overflow-x-hidden">
         {data.loading && <Loading />}
         {data.data && <Home />}
+        {data.error && <Error />}
       </div>
     </div>
   );

@@ -13,8 +13,6 @@ class Api {
       const t = await axios[method](path, body);
       return { statusCode: t.status, data: t.data };
     } catch (e) {
-      console.log("e", e);
-      console.log(e);
       if (!isAxiosError(e)) {
         return { statusCode: null, data: null };
       }
