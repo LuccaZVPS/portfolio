@@ -14,7 +14,7 @@ export const MainContent = () => {
         </i>
       </MainTitle>
       <Paragraph>{info.description}</Paragraph>
-      <MainButton>Sobre mim</MainButton>
+      <MainButton>About me</MainButton>
     </div>
   );
 };

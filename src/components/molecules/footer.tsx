@@ -3,7 +3,7 @@ import { FooterIcon } from "../atoms/footerIcons";
 import { Paragraph } from "../atoms/paragraph";
 
 export const Footer = () => {
-  const { socials } = useData().data;
+  const { socials, about } = useData().data;
   return (
     <footer className="w-full bg-card flex flex-col gap-6 pt-4 dark:bg-dcard relative">
       <div className="w-full justify-center flex gap-3">
@@ -12,9 +12,7 @@ export const Footer = () => {
         ))}
       </div>
       <div className="text-center w-full">
-        <Paragraph>
-          &copy; 2023 Lucca Zavarize. Todos os direitos reservados.
-        </Paragraph>
+        <Paragraph>&copy; 2023 {about.name}. all rights reserved.</Paragraph>
       </div>
     </footer>
   );
