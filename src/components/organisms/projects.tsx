@@ -1,5 +1,4 @@
 import { useData } from "../../contexts/data";
-import { Container } from "../atoms/container";
 import { EmojiText } from "../atoms/emojiText";
 import { Heading } from "../atoms/heading";
 import { Project } from "../molecules/project";
@@ -9,7 +8,6 @@ export const Projects = () => {
   const { projects } = useData().data;
   return (
     <Section>
-      <Container>
         <div className="flex flex-col w-[100%] ">
           <div className="flex flex-col gap-6">
             <EmojiText>🔗 Portfólio</EmojiText>
@@ -30,7 +28,6 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-      </Container>
     </Section>
   );
 };
