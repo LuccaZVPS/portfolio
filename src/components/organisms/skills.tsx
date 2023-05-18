@@ -9,7 +9,7 @@ export const Skills = () => {
     <Section>
       <div className="flex flex-col items-center gap-5 w-full">
         <EmojiText>🧑‍💻 Skills</EmojiText>
-        <Heading>Tecnologias e habilidades</Heading>
+        <Heading>Techs</Heading>
         <div className="overflow-x-auto w-full">
           <div className=" flex w-fit gap-5 md:w-full md:justify-center md:flex-wrap xl:gap-7 xl2:gap-10">
             {skills.map((s, n: number) => (
