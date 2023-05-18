@@ -14,7 +14,10 @@ export const Landing = () => {
         <ThemeToogle />
       </Header>
       <CentralContent />
-      <canvas className="absolute bg-transparent w-full h-screen" id="canvas" />
+      <canvas
+        className="absolute bg-transparent w-full left-0 top-0 h-screen"
+        id="canvas"
+      />
     </section>
   );
 };

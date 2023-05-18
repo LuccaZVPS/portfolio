@@ -7,7 +7,7 @@ export const Index = () => {
   const data = useData();
   return (
     <div className="dark:bg-dbackground font-main max-w-screen min-h-screen box-border overflow-x-hidden flex justify-center">
-      <div className="w-full max-w-[2500px] overflow-x-hidden">
+      <div className="w-full overflow-x-hidden">
         {data.loading && <Loading />}
         {data.data && <Home />}
         {data.error && <Error />}
