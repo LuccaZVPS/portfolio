@@ -6,7 +6,7 @@ import { Section } from "../molecules/section";
 import { TimeLine } from "../molecules/timeLine";
 
 export const About = () => {
-  const { about } = useData().data;
+  const { about, sections } = useData().data;
   return (
     <Section>
       <div id="about" className="w-full flex flex-col gap-12 xl:gap-32">
@@ -19,8 +19,8 @@ export const About = () => {
             />
           </div>
           <div className="flex flex-col gap-6 lg:w-1/2 xl2:gap-8 justify-center">
-            <EmojiText>🧐 About me</EmojiText>
-            <Heading>{about.name}</Heading>
+            <EmojiText>{sections.about.secundary}</EmojiText>
+            <Heading>{sections.about.title}</Heading>
             <div className="text-left">
               <Summary list={about.notes} />
             </div>

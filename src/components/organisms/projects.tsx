@@ -5,13 +5,13 @@ import { Project } from "../molecules/project";
 import { Section } from "../molecules/section";
 
 export const Projects = () => {
-  const { projects } = useData().data;
+  const { projects, sections } = useData().data;
   return (
     <Section>
       <div className="flex flex-col w-[100%] ">
         <div className="flex flex-col gap-6">
-          <EmojiText>🔗 Portfolio</EmojiText>
-          <Heading>Projects</Heading>
+          <EmojiText>{sections.project.secundary}</EmojiText>
+          <Heading>{sections.project.title}</Heading>
         </div>
         <div className="w-full overflow-x-auto mt-10">
           <div className="flex w-fit gap-8 md:w-full md:grid-cols-fluid md:grid sm:gap-10 xl2:grid-cols-fluid2 xl3:grid-cols-fluid3 justify-evenly">

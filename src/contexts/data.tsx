@@ -6,6 +6,7 @@ import { IAbout } from "../types/about";
 import { Social } from "../types/social";
 import { IInfo } from "../types/info";
 import { ITimeLine } from "../types/timeLine";
+import { ISection } from "../types/section";
 interface props {
   children: ReactNode;
 }
@@ -48,4 +49,5 @@ interface Data {
   socials: Social[];
   info: IInfo;
   timeLine: ITimeLine[];
+  sections: ISection;
 }
