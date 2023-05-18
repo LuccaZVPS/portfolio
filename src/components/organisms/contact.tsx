@@ -11,7 +11,7 @@ export const Contact = () => {
       <div className="gap-4 w-full flex items-center flex-col">
         <EmojiText>{sections.contact.secundary}</EmojiText>
         <Heading>{sections.contact.title}</Heading>
-        <div className="mt-8 flex flex-wrap w-full gap-y-8 gap-4 justify-between lg:justify-center lg:gap-16 xl2:gap-28 ">
+        <div className="mt-10 flex flex-wrap w-full gap-y-8 gap-4 justify-between lg:justify-center lg:gap-16 xl2:gap-28 ">
           {contacts.map((c, n: number) => (
             <ContactBox
               key={n}
