@@ -3,6 +3,7 @@ import { api } from "../api/api";
 import { ISkill } from "../types/skill";
 import { IProject } from "../types/project";
 import { IAbout } from "../types/about";
+import { Social } from "../types/social";
 interface props {
   children: ReactNode;
 }
@@ -42,4 +43,5 @@ interface Data {
   skills: ISkill[];
   projects: IProject[];
   about: IAbout;
+  socials: Social[];
 }

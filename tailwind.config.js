@@ -31,7 +31,7 @@ export default {
         heading: "#343a40",
         card: "#e9ecef",
         border: "#ced4da",
-
+        footer: "#dee2e6",
         //dark
         dbackground: "#181a1c",
         dprimary: "#1c7ed6",

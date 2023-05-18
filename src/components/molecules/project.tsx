@@ -3,7 +3,6 @@ import { Description } from "../atoms/description";
 import { ProjectIcon } from "../atoms/projectIcon";
 import { SecundaryHeading } from "../atoms/secundaryHeading";
 import { Terminal } from "../atoms/terminal";
-
 export const Project = ({ title, description, icons, img, link }: IProject) => {
   const handleClick = () => {
     window.open(link, "_blank");
