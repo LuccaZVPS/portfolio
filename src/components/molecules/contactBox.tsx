@@ -2,7 +2,6 @@ import { IContact } from "../../types/contact";
 import { Paragraph } from "../atoms/paragraph";
 import { SecundaryHeading } from "../atoms/secundaryHeading";
 export const ContactBox = ({ content, img, title }: IContact) => {
-  console.log(content);
   return (
     <a
       href={content}
