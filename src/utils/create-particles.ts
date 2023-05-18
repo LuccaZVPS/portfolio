@@ -4,24 +4,26 @@ export default function createParticles() {
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
   let numberOfParticles = (canvas.height * canvas.width) / 4000;
-  const bigScreen = window.innerWidth > 1920 ? true : false;
-  const n1 = bigScreen ? 300 : 80;
-  const n2 = bigScreen ? 300 : 80;
+  const bigScreen = window.innerWidth >= 2500 ? true : false;
+  let r1 = (canvas.height / 0.5) * (canvas.width / 80);
+  let r2 = (canvas.height / 75) * (canvas.width / 80);
 
   if (bigScreen) {
-    numberOfParticles = 500;
+    numberOfParticles = 650;
+    r1 = 50000;
+    r2 = 450;
   }
   let particlesArray: any;
   const mousePosition = {
     x: canvas.width / 2,
     y: canvas.height / 2,
-    radius: (canvas.height / 0.5) * (canvas.width / n1),
+    radius: r1,
   };
 
   const position1 = {
     x: canvas.width / 2,
     y: canvas.height / 2,
-    radius: (canvas.height / 75) * (canvas.width / n2),
+    radius: r2,
   };
 
   setTimeout(() => {
