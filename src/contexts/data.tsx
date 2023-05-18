@@ -4,6 +4,8 @@ import { ISkill } from "../types/skill";
 import { IProject } from "../types/project";
 import { IAbout } from "../types/about";
 import { Social } from "../types/social";
+import { IInfo } from "../types/info";
+import { ITimeLine } from "../types/timeLine";
 interface props {
   children: ReactNode;
 }
@@ -44,4 +46,6 @@ interface Data {
   projects: IProject[];
   about: IAbout;
   socials: Social[];
+  info: IInfo;
+  timeLine: ITimeLine[];
 }

@@ -32,6 +32,7 @@ export default {
         card: "#e9ecef",
         border: "#ced4da",
         footer: "#dee2e6",
+        hover: "#dee2e6",
         //dark
         dbackground: "#181a1c",
         dprimary: "#1c7ed6",
@@ -39,6 +40,7 @@ export default {
         dheading: "#f8f9fa",
         dcard: "#212529",
         dborder: "#4A4A4A",
+        dhover: "#343a40",
       },
     },
   },

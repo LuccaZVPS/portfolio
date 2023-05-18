@@ -10,7 +10,9 @@ export const Terminal = ({ children, clickable, onClick }: props) => {
     <div
       onClick={() => onClick && onClick()}
       className={`${
-        clickable ? "cursor-pointer" : ""
+        clickable
+          ? "cursor-pointer hover:bg-hover transition-600 dark:hover:bg-dhover"
+          : ""
       } bg-card rounded-xl flex flex-col px-6 pt-4 gap-3 border-solid border border-border pb-6 dark:bg-dcard dark:border-dborder min-w-[calc(260px)] `}
     >
       <div className="flex gap-2 ">
