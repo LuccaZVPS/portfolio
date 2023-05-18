@@ -7,6 +7,7 @@ import { Social } from "../types/social";
 import { IInfo } from "../types/info";
 import { ITimeLine } from "../types/timeLine";
 import { ISection } from "../types/section";
+import { IContact } from "../types/contact";
 interface props {
   children: ReactNode;
 }
@@ -50,4 +51,5 @@ interface Data {
   info: IInfo;
   timeLine: ITimeLine[];
   sections: ISection;
+  contacts: IContact[];
 }

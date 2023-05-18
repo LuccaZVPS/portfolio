@@ -1,5 +1,6 @@
 import { Footer } from "../molecules/footer";
 import { About } from "../organisms/about";
+import { Contact } from "../organisms/contact";
 import { Landing } from "../organisms/landing";
 import { Projects } from "../organisms/projects";
 import { Skills } from "../organisms/skills";
@@ -11,6 +12,7 @@ export const HomeTemplate = () => {
       <About />
       <Projects />
       <Skills />
+      <Contact />
       <Footer />
     </main>
   );
