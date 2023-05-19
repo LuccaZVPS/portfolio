@@ -4,7 +4,16 @@ import { MainTitle } from "../atoms/mainTitle";
 import { Paragraph } from "../atoms/paragraph";
 export const MainContent = () => {
   const { info } = useData().data;
-
+  const scrollToAbout = () => {
+    const element = document.getElementById("about");
+    const elementRect = element?.getBoundingClientRect();
+    if (!elementRect) {
+      return;
+    }
+    const absoluteElementTop = elementRect.top + window.pageYOffset;
+    const middle = absoluteElementTop - window.innerHeight / 3;
+    window.scrollTo(0, middle);
+  };
   return (
     <div className="flex flex-col items-center justify-center gap-3 z-30">
       <MainTitle>
@@ -14,7 +23,7 @@ export const MainContent = () => {
         </i>
       </MainTitle>
       <Paragraph>{info.description}</Paragraph>
-      <MainButton>Sobre mim</MainButton>
+      <MainButton onclick={scrollToAbout}>Sobre mim</MainButton>
     </div>
   );
 };
