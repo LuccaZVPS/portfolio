@@ -19,7 +19,7 @@ export const Project = ({ title, description, icons, img, link }: IProject) => {
       );
   }, []);
   return (
-    <div ref={projectCard} className="opacity-0 mt-10">
+    <div ref={projectCard} className={`opacity-100 xl:opacity-0 mt-10`}>
       <Terminal onClick={handleClick} clickable={true}>
         <div className="">
           <SecundaryHeading>{title}</SecundaryHeading>
