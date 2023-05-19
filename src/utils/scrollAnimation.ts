@@ -11,7 +11,6 @@ export const scrollAnimation = (
     const windowHeight = window.innerHeight;
     const revealTop = element.getBoundingClientRect().top;
     if (revealTop < windowHeight - revealPoint) {
-      console.log(element);
       element.className = "";
       element.className = visibleClass;
       window.removeEventListener("scroll", onScroll, true);
