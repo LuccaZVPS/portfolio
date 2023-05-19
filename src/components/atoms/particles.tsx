@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import createParticles from "../../utils/create-particles";
+import createParticles from "../../utils/createParticles";
 
 export const Particles = () => {
   useEffect(() => {

@@ -33,7 +33,7 @@ export default function createParticles() {
       position1.x = e.x;
       position1.y = e.y;
     });
-  }, 3500);
+  }, 1000);
 
   if (window.innerWidth < 1600) {
     numberOfParticles = (canvas.height * canvas.width) / 3300;
@@ -103,7 +103,7 @@ export default function createParticles() {
         speed = 0.3;
       }
       if (window.innerWidth < 768) {
-        speed = 0.1;
+        speed = 0.2;
       }
       if (bigScreen) {
         speed = 0.8;
@@ -194,6 +194,7 @@ export default function createParticles() {
             ctx.lineWidth = 0.2;
           }
           if (window.innerWidth < 768) {
+            ctx.strokeStyle = `rgb(81, 162, 233, 0)`;
             ctx.lineWidth = 1;
           }
 
