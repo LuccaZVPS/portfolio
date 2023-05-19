@@ -106,7 +106,7 @@ export default function createParticles() {
         speed = 0.1;
       }
       if (bigScreen) {
-        speed = 0.6;
+        speed = 0.8;
       }
 
       this.x += this.directionX * speed;
