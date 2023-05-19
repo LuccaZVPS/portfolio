@@ -4,3 +4,11 @@
 html {
   scroll-behavior: smooth;
 }
+.blink::after {
+  animation: typing 0.6s step-end infinite alternate;
+}
+@keyframes typing {
+  50% {
+    border-color: transparent;
+  }
+}

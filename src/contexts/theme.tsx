@@ -9,10 +9,10 @@ import {
 interface props {
   children: ReactNode;
 }
-const Context = createContext({ current: false } as context);
+const Context = createContext({ current: true } as context);
 
 export const ThemeContext = ({ children }: props) => {
-  const [current, setCurrent] = useState(false);
+  const [current, setCurrent] = useState(true);
   const onChange = () => {
     setCurrent(!current);
   };
@@ -24,8 +24,8 @@ export const ThemeContext = ({ children }: props) => {
 
   useMemo(() => {
     const theme = localStorage.getItem("theme");
-    if (theme && theme === "true") {
-      setCurrent(true);
+    if (theme && theme === "false") {
+      setCurrent(false);
     }
   }, []);
   return (
