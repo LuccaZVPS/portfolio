@@ -7,7 +7,7 @@ export const TimeLine = () => {
     <div className="xl:flex xl:w-full">
       {timeLine.map((i, n: number) => (
         <TimeLineElement
-          position={n + 1}
+          position={n}
           key={n}
           title={i.title}
           description={i.description}
