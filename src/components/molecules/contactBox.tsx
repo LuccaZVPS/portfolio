@@ -4,6 +4,7 @@ import { SecundaryHeading } from "../atoms/secundaryHeading";
 export const ContactBox = ({ content, img, title }: IContact) => {
   return (
     <div className="text-center flex-col items-center flex-1">
+
       <a
         href={content}
         rel="noreferrer"
