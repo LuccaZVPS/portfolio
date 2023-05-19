@@ -11,7 +11,7 @@ export const Project = ({ title, description, icons, img, link }: IProject) => {
     <Terminal onClick={handleClick} clickable={true}>
       <div className="">
         <SecundaryHeading>{title}</SecundaryHeading>
-        <div className=" mt-2 h-20 ">
+        <div className=" mt-2 h-[100px]">
           <Description>{description}</Description>
         </div>
         <div className="flex gap-2 mb-4 mt-5 bg ">

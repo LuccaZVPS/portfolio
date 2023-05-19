@@ -19,7 +19,10 @@ export default {
         fluid2: "repeat(auto-fit, 280px)",
         fluid3: "repeat(auto-fit, 320px)",
       },
-
+      fontSize: {
+        xs: "0.8rem",
+        sm: "0.95rem",
+      },
       boxShadow: {
         light: "0 0 5px #1c7ed6",
         dark: "0 0 5px #1c7ed6",

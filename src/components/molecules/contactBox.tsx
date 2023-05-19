@@ -3,7 +3,7 @@ import { Paragraph } from "../atoms/paragraph";
 import { SecundaryHeading } from "../atoms/secundaryHeading";
 export const ContactBox = ({ content, img, title }: IContact) => {
   return (
-    <div className="flex w-[150px] text-center flex-col items-center  lg:w-[300px]">
+    <div className="text-center flex-col items-center flex-1">
       <a
         href={content}
         rel="noreferrer"
