@@ -23,7 +23,7 @@ export const MainContent = () => {
         </i>
       </MainTitle>
       <Paragraph>{info.description}</Paragraph>
-      <MainButton onclick={scrollToAbout}>Sobre mim</MainButton>
+      <MainButton onclick={scrollToAbout}>About me</MainButton>
     </div>
   );
 };
