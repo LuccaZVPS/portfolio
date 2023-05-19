@@ -19,7 +19,7 @@ export const TimeLineElement = ({
     scrollAnimation(
       textElement.current,
       "flex opacity-100 flex-col duration-[700ms] transition-all gap-2 xl:w-[80%] mt-0",
-      window.innerWidth > 1150 ? 100 : 300
+      window.innerWidth > 1150 ? 70 : 300
     );
   }, []);
   return (
