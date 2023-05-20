@@ -2,6 +2,8 @@ import { useData } from "../../contexts/data";
 import { MainButton } from "../atoms/mainButton";
 import { MainTitle } from "../atoms/mainTitle";
 import { Paragraph } from "../atoms/paragraph";
+import { Typing } from "../atoms/typing";
+
 export const MainContent = () => {
   const { info } = useData().data;
   const scrollToAbout = () => {
@@ -16,13 +18,10 @@ export const MainContent = () => {
   };
   return (
     <div className=" flex flex-col items-center justify-center gap-3 z-30">
-      <MainTitle>
-        <i>
-          <span className="text-primary dark:text-dprimary">{info.name}</span>{" "}
-          {info.lastName}
-        </i>
-      </MainTitle>
-      <Paragraph>{info.description}</Paragraph>
+      <MainTitle>a</MainTitle>
+      <Paragraph>
+        <Typing>{info.description}</Typing>
+      </Paragraph>
       <MainButton onclick={scrollToAbout}>Sobre mim</MainButton>
     </div>
   );

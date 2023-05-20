@@ -3,11 +3,11 @@ import createParticles from "../../utils/createParticles";
 
 export const Particles = () => {
   useEffect(() => {
-    createParticles();
+    //createParticles();
   }, []);
   return (
     <canvas
-      className=" absolute bg-transparent w-full left-0 top-0 h-screen"
+      className="none absolute bg-transparent w-full left-0 top-0 h-screen"
       id="canvas"
     />
   );
