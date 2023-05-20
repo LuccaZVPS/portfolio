@@ -18,11 +18,18 @@ export const MainContent = () => {
   };
   return (
     <div className=" flex flex-col items-center justify-center gap-3 z-30">
-      <MainTitle>a</MainTitle>
+      <MainTitle>
+        <i>
+          <span className="text-primary dark:text-dprimary">{info.name}</span>{" "}
+          {info.lastName}
+        </i>
+      </MainTitle>
       <Paragraph>
         <Typing>{info.description}</Typing>
       </Paragraph>
-      <MainButton onclick={scrollToAbout}>Sobre mim</MainButton>
+      <div className="toUp opacity-0">
+        <MainButton onclick={scrollToAbout}>Sobre mim</MainButton>
+      </div>
     </div>
   );
 };

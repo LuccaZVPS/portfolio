@@ -7,7 +7,7 @@ export const Typing = ({ children }: props) => {
   const estiloCSS = document.createElement("style");
   estiloCSS.innerHTML = `
   .bar::before {
-    animation: type 2.5s steps(${children.length}) forwards, typing 0.5s 2.5s step-end infinite alternate;
+    animation: type 2.5s steps(${children.length}) forwards, typing 0.5s 3s step-end infinite alternate;
 
   }
   @keyframes typing {
@@ -19,9 +19,12 @@ export const Typing = ({ children }: props) => {
   @keyframes type {
     0% {
       left: 0;
+      width:100%;
     }
     100% {
       left: 100%;
+      width:0%;
+
     }
   }
   

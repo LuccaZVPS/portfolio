@@ -4,3 +4,33 @@
 html {
   scroll-behavior: smooth;
 }
+.toUp {
+  animation: hideButton 2.5s 1.25s forwards;
+}
+#canvas {
+  animation: hideParticless 1.5s 2.75s forwards;
+}
+@keyframes hideButton {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes hideParticless {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
