@@ -8,7 +8,7 @@ html {
   animation: hideButton 2.5s 1.2s forwards;
 }
 #canvas {
-  animation: hideParticless 1.5s 2.7s forwards;
+  animation: hideParticless 1.3s 3.4s forwards;
 }
 @keyframes hideButton {
   0% {
@@ -27,8 +27,9 @@ html {
 @keyframes hideParticless {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(40px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
