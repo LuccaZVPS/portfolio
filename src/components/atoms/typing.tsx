@@ -36,7 +36,7 @@ export const Typing = ({ children }: props) => {
   const element = useRef(null as unknown as HTMLSpanElement);
   return (
     <span
-      className="bar dark:before:bg-dbackground before:absolute relative before:border-l-[2px] before:border-solid left-0 before:border-primary before:h-full before:w-full before:bg-background "
+      className="bar dark:before:bg-dbackground before:absolute relative before:border-l-[2px] before:border-solid left-0 before:border-primary before:h-[105%] before:w-full before:bg-background "
       ref={element}
     >
       {children}
