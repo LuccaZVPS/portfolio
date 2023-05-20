@@ -15,11 +15,11 @@ export const Project = ({ title, description, icons, img, link }: IProject) => {
       scrollAnimation(
         projectCard.current,
         "opacity-100 mb-0 duration-[1000ms] transition-all",
-        150
+        0
       );
   }, []);
   return (
-    <div ref={projectCard} className={`opacity-100 xl:opacity-0 mt-10`}>
+    <div ref={projectCard} className={`opacity-100 xl:opacity-0 mt-14`}>
       <Terminal onClick={handleClick} clickable={true}>
         <div className="">
           <SecundaryHeading>{title}</SecundaryHeading>

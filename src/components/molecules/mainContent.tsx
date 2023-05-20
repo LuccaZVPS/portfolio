@@ -2,6 +2,8 @@ import { useData } from "../../contexts/data";
 import { MainButton } from "../atoms/mainButton";
 import { MainTitle } from "../atoms/mainTitle";
 import { Paragraph } from "../atoms/paragraph";
+import { Typing } from "../atoms/typing";
+
 export const MainContent = () => {
   const { info } = useData().data;
   const scrollToAbout = () => {
@@ -22,8 +24,12 @@ export const MainContent = () => {
           {info.lastName}
         </i>
       </MainTitle>
-      <Paragraph>{info.description}</Paragraph>
-      <MainButton onclick={scrollToAbout}>About me</MainButton>
+      <Paragraph>
+        <Typing>{info.description}</Typing>
+      </Paragraph>
+      <div className="toUp opacity-0">
+        <MainButton onclick={scrollToAbout}>About me</MainButton>
+      </div>
     </div>
   );
 };

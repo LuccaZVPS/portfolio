@@ -4,14 +4,14 @@ export default function createParticles() {
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
   let numberOfParticles = (canvas.height * canvas.width) / 4000;
-  const bigScreen = window.innerWidth >= 2500 ? true : false;
+  const bigScreen = window.innerWidth > 1920 ? true : false;
   let r1 = (canvas.height / 0.5) * (canvas.width / 80);
   let r2 = (canvas.height / 75) * (canvas.width / 80);
 
   if (bigScreen) {
-    numberOfParticles = 650;
+    numberOfParticles = 500;
     r1 = 50000;
-    r2 = 450;
+    r2 = 500;
   }
   let particlesArray: any;
   const mousePosition = {
@@ -33,7 +33,7 @@ export default function createParticles() {
       position1.x = e.x;
       position1.y = e.y;
     });
-  }, 3500);
+  }, 4100);
 
   if (window.innerWidth < 1600) {
     numberOfParticles = (canvas.height * canvas.width) / 3300;
@@ -103,7 +103,7 @@ export default function createParticles() {
         speed = 0.3;
       }
       if (window.innerWidth < 768) {
-        speed = 0.1;
+        speed = 0.2;
       }
       if (bigScreen) {
         speed = 0.8;
@@ -194,6 +194,7 @@ export default function createParticles() {
             ctx.lineWidth = 0.2;
           }
           if (window.innerWidth < 768) {
+            ctx.strokeStyle = `rgb(81, 162, 233, 0)`;
             ctx.lineWidth = 1;
           }
 

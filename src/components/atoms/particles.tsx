@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import createParticles from "../../utils/create-particles";
+import createParticles from "../../utils/createParticles";
 
 export const Particles = () => {
   useEffect(() => {
@@ -7,7 +7,7 @@ export const Particles = () => {
   }, []);
   return (
     <canvas
-      className=" absolute bg-transparent w-full left-0 top-0 h-screen"
+      className="opacity-0 none absolute bg-transparent w-full left-0 top-0 h-screen"
       id="canvas"
     />
   );
