@@ -5,10 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 .toUp {
-  animation: hideButton 2.5s 1.25s forwards;
+  animation: hideButton 2.5s 1.2s forwards;
 }
 #canvas {
-  animation: hideParticless 1.5s 2.75s forwards;
+  animation: hideParticless 1.5s 2.7s forwards;
 }
 @keyframes hideButton {
   0% {
