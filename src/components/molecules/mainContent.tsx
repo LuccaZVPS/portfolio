@@ -28,7 +28,7 @@ export const MainContent = () => {
         <Typing>{info.description}</Typing>
       </Paragraph>
       <div className="toUp opacity-0">
-        <MainButton onclick={scrollToAbout}>Sobre mim</MainButton>
+        <MainButton onclick={scrollToAbout}>About me</MainButton>
       </div>
     </div>
   );
