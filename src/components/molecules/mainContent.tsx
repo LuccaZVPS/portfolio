@@ -24,9 +24,7 @@ export const MainContent = () => {
           {info.lastName}
         </i>
       </MainTitle>
-      <Paragraph>
-        <Typing>{info.description}</Typing>
-      </Paragraph>
+      <Paragraph>{info.description}</Paragraph>
       <div className="toUp opacity-0">
         <MainButton onclick={scrollToAbout}>Sobre mim</MainButton>
       </div>

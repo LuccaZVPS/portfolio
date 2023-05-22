@@ -33,7 +33,7 @@ export default function createParticles() {
       position1.x = e.x;
       position1.y = e.y;
     });
-  }, 4100);
+  }, 1500);
 
   if (window.innerWidth < 1600) {
     numberOfParticles = (canvas.height * canvas.width) / 3300;
