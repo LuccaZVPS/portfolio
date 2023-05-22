@@ -2,7 +2,6 @@ import { useData } from "../../contexts/data";
 import { MainButton } from "../atoms/mainButton";
 import { MainTitle } from "../atoms/mainTitle";
 import { Paragraph } from "../atoms/paragraph";
-import { Typing } from "../atoms/typing";
 
 export const MainContent = () => {
   const { info } = useData().data;

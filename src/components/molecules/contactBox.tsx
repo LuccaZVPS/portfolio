@@ -7,6 +7,7 @@ export const ContactBox = ({ content, img, title }: IContact) => {
       <a
         href={content}
         rel="noreferrer"
+        target="_blank"
         className="text-center flex flex-col items-center "
       >
         <div className="mb-2 flex justify-center items-center bg-primary dark:bg-primary w-12 h-12 rounded-full">
