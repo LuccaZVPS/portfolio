@@ -14,7 +14,7 @@ export const Project = ({ title, description, icons, img, link }: IProject) => {
     window.innerWidth > 768 &&
       scrollAnimation(
         projectCard.current,
-        "opacity-100 mb-0 duration-[1000ms] transition-all",
+        "opacity-100 mb-0 duration-[500ms] transition-all",
         0
       );
   }, []);
