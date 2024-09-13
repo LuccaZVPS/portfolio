@@ -14,7 +14,7 @@ export const About = () => {
           <div className="flex justify-center lg:w-[calc(50%)] lg:justify-end">
             <img
               className="self-center rounded-full w-56 h-auto lg:w-64 lg:mr-28 xl2:w-72"
-              src={`${import.meta.env.VITE_API_DOMAIN}/${about.img}`}
+              src={`{about.img}`}
               alt=""
             />
           </div>
