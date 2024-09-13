@@ -3,7 +3,6 @@ import { Summary } from "../molecules/summary";
 import { EmojiText } from "../atoms/emojiText";
 import { useData } from "../../contexts/data";
 import { Section } from "../molecules/section";
-import { TimeLine } from "../molecules/timeLine";
 
 export const About = () => {
   const { about, sections } = useData().data;
@@ -26,7 +25,6 @@ export const About = () => {
             </div>
           </div>
         </div>
-        <TimeLine></TimeLine>
       </div>
     </Section>
   );
