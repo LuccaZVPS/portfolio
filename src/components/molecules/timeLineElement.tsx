@@ -50,7 +50,7 @@ export const TimeLineElement = ({
 
         <div className="flex items-center gap-4 mt-2">
           <img
-            className="w-10 h-10 rounded-full"
+            className="w-10 h-10 rounded-full object-cover"
             src={`${import.meta.env.VITE_API_DOMAIN}/${img}`}
             alt=""
           />

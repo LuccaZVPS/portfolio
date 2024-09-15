@@ -12,7 +12,7 @@ export const Footer = () => {
         ))}
       </div>
       <div className="text-center w-full">
-        <Paragraph>&copy; 2023 {about.name}. all rights reserved.</Paragraph>
+        <Paragraph>&copy; 2024 {about.name}. all rights reserved.</Paragraph>
       </div>
     </footer>
   );
